@@ -39,7 +39,10 @@ gulp.task("comprimir",function(cb){
 
 gulp.task('deploy', function () {
     return gulp.src("./app/**/*")
-      .pipe(deploy())
+    .pipe(deploy({ 
+        remoteUrl: "https://github.com/Rob866/fotografia.git",
+        branch: "master"
+      }))
   });
 
 
