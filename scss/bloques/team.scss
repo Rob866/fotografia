@@ -1,0 +1,189 @@
+.team
+{
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: url("/img/black.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.team .container{
+    width :80%;
+    margin: 50px auto;
+    position: relative;
+    box-sizing: border-box;  
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);  
+}
+.team .container .row .h3 {
+    color: #fff;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+
+}
+.team .container .row p {
+
+    margin: 20px 0 0;
+    color: #fff;
+    padding-left: 20px;
+    border-left: 5px solid #f00;
+    text-align: justify;
+
+}
+
+.team .container .row {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+.team .container .row .content-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.team .container .row .content-flex .column{
+    width: 30%;
+    height: 400px;
+    background-color:gray;
+    margin-bottom :20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+//extra
+.team .container .row .content-flex .column:after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,0,0,1);
+    transition: 0.5s;
+    mix-blend-mode: soft-light;
+    z-index: 1;
+ 
+}
+
+.team .container .row .content-flex .column:hover:after
+{
+        bottom: 0;
+   
+}
+//--------
+
+
+.team .container .row .content-flex .column .imgBox{
+  position: relative;
+}
+.team .container .row .content-flex .column .imgBox img {
+    width: 100%; 
+    height: 100%;
+    transition: 3s;
+}
+.team .container .row .content-flex .column .details{
+
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(0,0,0,.9); 
+    width: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+
+.team .container .row .content-flex .column:hover{
+    .details {
+        bottom: 0;
+    }
+
+}
+
+.team .container .row .content-flex .column .details h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+    text-transform: uppercase;
+
+}
+.team .container .row .content-flex .column .details h3 span{
+
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #f00;
+    font-weight: 900;
+    position: relative;
+    top: -2px;
+}
+.team .container .row .content-flex .column .details ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.team .container .row .content-flex .column .details li {
+   list-style: none;
+
+}
+
+.team .container .row .content-flex .column .details li a{
+   padding: 0 10px;
+   color:#fff;
+
+}
+
+.team .container .row .content-flex .column .details li a .fa{
+    transition: .8s;
+}
+
+.team .container .row .content-flex .column .details li a:hover{
+    .fa{
+        transform: rotateY(360deg);
+        color : #f00;
+    }
+} 
+
+
+
+
+.row .column:hover {
+    .imgBox img{
+        transform: scale(1.2);
+    }
+}
+
+
+@media screen and(max-width: 720px) {
+    .team .container .row .content-flex .column{
+        width: 40%;
+        justify-content: initial;
+        height: 350px;
+    }
+
+}
+
+@media screen and(max-width: 580px) {
+    .team .container .row .content-flex .column{
+        width: 100%;
+        height: 400px;
+
+    }
+
+}

@@ -1,0 +1,148 @@
+.form{
+    margin: 0;
+    color:#485e74;
+    line-height: 1.6;
+    font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top:1em;
+    padding-bottom: 1em;
+    color:#fff;
+    width: 100%; 
+
+    background: url("/img/black.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.form .wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.8);
+    margin-bottom: 50px;
+}
+
+.form .wrapper > * {
+    padding: 1em;
+
+}
+
+.form .wrapper .company-info {
+
+    background-color: #202020;
+    opacity: 0.7;
+  
+}
+
+.form .wrapper .company-info ul ,.form .wrapper .company-info h3{
+    text-align: center;
+}
+
+.form .wrapper .contact {
+    background-color: 	#484848;
+    opacity: 0.5;
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form .wrapper .company-info ul{
+   list-style: none;
+   padding: 0;
+}
+.form .wrapper .company-info ul i {
+    padding: 0 10px;
+    font-size: 22px;
+}
+.form .brand {
+    text-align: center;
+}
+
+
+.form .wrapper .contact form{
+ display: flex ;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ width :100%;
+ text-align: center;
+ 
+}
+
+.form .wrapper .contact form p {
+    width: 30%;
+ 
+}
+
+
+.form .wrapper .contact form p  label{
+    text-align: left;
+    display: block;
+    width: 100%;
+
+}
+
+.form .wrapper .contact form p  input{
+    display: block;
+    width: 100%;   
+    height: 40px;
+
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    background-color: 	#484848;
+
+}
+.form .wrapper .contact form p  textarea{
+
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    background-color: 	#484848;
+   
+}
+
+.form .wrapper .contact form p  button{
+    width: 100%;
+    border: 5px  #202020 solid;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: #202020;
+    outline: 0;
+    text-transform: uppercase;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display:  none;
+}
+
+@media screen and (max-width:720px){
+    .form .wrapper .contact form {
+        display: block;
+    }
+    .form .wrapper .contact form p {
+        width: 100%;
+     
+    }
+
+}
+
+
+
+
+
