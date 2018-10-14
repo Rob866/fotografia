@@ -119,7 +119,7 @@ function saveMessage(name,company,email,phone,message){
                
                  $('.project-title').text(newTitle);
                  var newFolder= $this.data("folder");
-                 var newHTML="html-files/work/"+newFolder+".html";   //esc6
+                 var newHTML="fotografia/html-files/work/"+newFolder+".html";   //esc6
                  console.log(newHTML);
                  $('.project-load').load(newHTML);
                 }) 
